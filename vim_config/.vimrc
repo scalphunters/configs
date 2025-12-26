@@ -17,6 +17,8 @@ set relativenumber
 set foldmethod=manual "indent
 noremap <F12> <Esc>:syntax sync fromstart<CR>
 inoremap <F12> <C-o>:syntax sync fromstart<CR>
+noremap <PageUp> <Nop>
+noremap <PageDown> <Nop>
 
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
