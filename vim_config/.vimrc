@@ -6,6 +6,7 @@ set expandtab
 set shiftwidth=2
 set tabstop=2
 set nobackup
+set nowritebackup
 set showmatch
 set hlsearch
 set history=1000
@@ -17,9 +18,12 @@ set relativenumber
 set foldmethod=manual "indent
 noremap <F12> <Esc>:syntax sync fromstart<CR>
 inoremap <F12> <C-o>:syntax sync fromstart<CR>
+
 noremap <PageUp> <Nop>
-noremap <PageDown> <Nop>
-noremap <S-CR> <Nop> "disable shift+enter for paging down
+noremap <PageDown> <Nop> 
+noremap <S-CR> <Nop> "disable shift+enter to pagedown
+nnoremap ]q :cnext<CR>
+nnoremap [q :cprevious<CR>
 
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
@@ -43,4 +47,3 @@ endfunction
 
 " + 레지스터로 yank할 때 자동으로 OSC52 실행
 autocmd TextYankPost * if v:event.operator ==# 'y' && (v:event.regname ==# '+' || v:event.regname ==# '') | call Osc52Yank() | endif
-
