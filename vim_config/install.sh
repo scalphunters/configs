@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# tmux
+cp ./.tmux.conf $HOME/
+
 # vimrc
 cp ./.vimrc $HOME/
 # NERDTree
