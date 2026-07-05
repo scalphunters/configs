@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RCFILENAME=$HOME/.bashrc
+RCFILENAME=$HOME/.zshrc
 
 echo "alias ls='eza -alh --git --icons'" >> $RCFILENAME
 echo "alias lse='eza -alh --git --icons'" >> $RCFILENAME 

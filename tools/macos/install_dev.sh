@@ -26,5 +26,5 @@ echo "Version:"
 lazygit --version
 echo "==============================="
 
-brew install rg fzf fd eza
+brew install rg fzf fd eza lazygit
 
