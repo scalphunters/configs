@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+set -euo pipefail
 mkdir -p ~/.local/bin
 
 ## Lazygit
