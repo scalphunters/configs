@@ -57,15 +57,14 @@ cp "ripgrep-${RG_VERSION#v}-${RG_ARCH}/rg" "$INSTALL_DIR"
 ####################################
 # fd
 ####################################
-
 echo "Installing fd $FD_VERSION"
 
 curl -fsSLO \
-"https://github.com/sharkdp/fd/releases/download/${FD_VERSION}/fd-${FD_VERSION#v}-${FD_ARCH}.tar.gz"
+"https://github.com/sharkdp/fd/releases/download/${FD_VERSION}/fd-${FD_VERSION}-${FD_ARCH}.tar.gz"
 
-tar -xzf "fd-${FD_VERSION#v}-${FD_ARCH}.tar.gz"
+tar -xzf "fd-${FD_VERSION}-${FD_ARCH}.tar.gz"
 
-cp "fd-${FD_VERSION#v}-${FD_ARCH}/fd" "$INSTALL_DIR"
+cp "fd-${FD_VERSION}-${FD_ARCH}/fd" "$INSTALL_DIR"
 
 ####################################
 # fzf
